@@ -22,9 +22,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-            RotationImputM();
+            RotationImputM(); // Call this method every frame so we have smoth camera movement 
 
-            WASD();
+            WASD(); // Call this method every frame so we have smoth player movement 
 
     }
 

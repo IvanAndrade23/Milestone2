@@ -8,11 +8,18 @@ public class CoinCheck : MonoBehaviour
         {
             CoinCount playerCounter = other.GetComponent<CoinCount>(); // Finds the Coin Count script 
 
-            GameManager gameManager = FindAnyObjectByType<GameManager>();  // Finds the gameManger Scricpt and all it 
+            GameManager gameManager = FindAnyObjectByType<GameManager>();  // Finds the gameManger Scricpt and all collected coins will sotored in GameManager 
+            
+            EnemyManager enemyManager = FindAnyObjectByType<EnemyManager>(); // Finds the Enemy manager script
 
             if (gameManager != null)
             {
-                gameManager.AddCollectedCoin(1); // Adds collect coins Until reached its set target to load up nect scene
+                gameManager.AddCollectedCoin(1); // Adds collect coins Until reached its set target to load up next scene
+            }
+
+            if (enemyManager != null)
+            {
+                enemyManager.AddCollectedCoin(1); // Adds collect coins Until reached its set target to load up next scene
             }
 
             if (playerCounter != null) 
@@ -26,8 +33,5 @@ public class CoinCheck : MonoBehaviour
             }
         }
     }
-    
-
-
 
 }

@@ -40,12 +40,8 @@ public class PlayerTargeting : MonoBehaviour
         controller.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
 
-    void HandleTargeting()
+     void HandleTargeting()
     {
-        // If no enemy data available, stop
-        if (enemyManager == null || enemyManager.sortedEnemies == null || enemyManager.sortedEnemies.Length == 0)
-            return;
-
         // Press T to switch to next enemy
         if (Input.GetKeyDown(KeyCode.T))
         {

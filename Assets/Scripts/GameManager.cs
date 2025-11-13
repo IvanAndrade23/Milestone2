@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement; // Adding scenemanager it will load everyting
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
     private int CollectedCoin = 0; // this value is automatically set to 0 b
        
     private bool isPause = false; // Pause Menu
+
+    public Text coinText; 
+
 
     public void AddCollectedCoin(int amout)  // Call this method when a coin is collected 
     {
@@ -31,7 +35,8 @@ public class GameManager : MonoBehaviour
             }
 
             Pause();
-        }
+
+    }
 
     public void TogglePausemenu() 
     {
