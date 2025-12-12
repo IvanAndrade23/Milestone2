@@ -18,7 +18,7 @@ public class EnemyManager : MonoBehaviour
 
         if (CollectedCoin >= 1)       //Check is collectedcoin reaches 1
         {
-            SceneManager.LoadScene("Menu"); // Load the scene you created 
+            SceneManager.LoadScene("Enemy AI"); // Load the scene you created 
             Debug.Log("All Coins are collected, End Game!"); // Print message on Console
         }
     }

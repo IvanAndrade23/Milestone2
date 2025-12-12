@@ -7,7 +7,7 @@ public class StateMachine : MonoBehaviour // Class Name for Reference
     public Transform player; // I Can add my player here 
     public float speed = 3f; // Enemy walk speed, can be changed in ispector 
     public float chaseDistance = 5.0f; // Enemy distance to player to trigger chase 
-    public float attackDistance = 1.0f; // Enemy Distance to attack you and when collided you die 
+    public float attackDistance = 0.5f; // Enemy Distance to attack you and when collided you die 
     public GameManager gameManager; 
 
 

@@ -542,7 +542,8 @@ MonoBehaviour:
   player: {fileID: 1719012782}
   speed: 3
   chaseDistance: 10
-  attackDistance: 2
+  attackDistance: 0
+  gameManager: {fileID: 765019892}
 --- !u!1 &1514491981
 GameObject:
   m_ObjectHideFlags: 0
